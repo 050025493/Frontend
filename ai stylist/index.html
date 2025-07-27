@@ -1,0 +1,137 @@
+<div style="width: 100%; min-height: 120vh; position: relative; background: linear-gradient(138deg, #338A94 0%, #07636E 100%); overflow: hidden">
+    
+    
+
+    <!-- Back Button -->
+    <button id="btn-back" style="width: 50px; height: 50px; left: 80px; top: 70px; position: absolute; transform: rotate(0deg); transform-origin: top left; border: none; background: transparent; cursor: pointer;">
+        <img src="backward.png" alt="Back" style="width: 100%; height: 100%;" />
+    </button>
+
+   <!-- Circle 1 -->
+<div style="
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(184, 210, 254, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  transform: rotate(45deg);
+  z-index: 0;
+">
+</div>
+
+
+<div style="
+  width: 400px;
+  height: 400px;
+  border: 2px solid rgba(184, 210, 254, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  transform: rotate(-20deg);
+  z-index: 0;
+">
+</div>
+
+
+    <!-- Title -->
+    <div style="width: 407px; height: 68px; left:550px; top: 73px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 52px; font-family: Poppins; font-weight: 700;">Ask AI Stylist</div>
+
+    <!-- Chat Container -->
+    <div style="width: 1024px; height: 591px; left: 230px; top: 264px; position: absolute; background: #C9D6EB; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 20px; overflow: hidden;">
+        
+        <!-- Chat Input Bar -->
+        <div style="width: 930px; height: 64px; left: 48px; top: 507px; position: absolute; background: #D9D9D9; border-radius: 12px; border: 1px black solid;"></div>
+
+        <!-- AI Avatar -->
+        <img src="ai.png" alt="AI Avatar" style="width: 48px; height: 48px; left: 40px; top: 38px; position: absolute;" />
+
+        <!-- AI Message Bubble -->
+        <div style="width: 378px; height: 100px; left: 105px; top: 44px; position: absolute; background: rgba(255, 255, 255, 0.60); border-radius: 6px; overflow: hidden;">
+            <div style="width: 373px; height: 62px; left: 10px; top: 10px; position: absolute; display: flex; align-items: center; color: black; font-size: 20px; font-family: Poppins; font-weight: 500;">
+                Hello, how can I assist you with your outfit today?
+            </div>
+        </div>
+
+
+
+
+
+
+
+       <!-- Interactive Input Field -->
+<input
+  id="chat-input"
+  type="text"
+  style="width: 571px; height: 48px; left: 115px; top: 510px; position: absolute; padding: 10px 16px; font-size: 18px; font-family: Poppins; font-weight: 500; border: none; border-radius: 10px; outline: none; background: transparent;"
+  placeholder=""
+/>
+
+
+        <!-- upload Button -->
+        <button id="btn-upload" style="position: absolute; left: 62px; top: 523px; width: 33px; height: 33px; background: none; border: none; cursor: pointer;">
+            <img src="upload.png" alt="upload" style="width: 100%; height: 100%;" />
+        </button>
+        
+
+        <!-- Send Button -->
+        <button id="btn-send" style="position: absolute; left: 930px; top: 522px; width: 36px; height: 36px; background: none; border: none; opacity: 0.78; cursor: pointer;">
+            <img src="send.png" alt="Send" style="width: 100%; height: 100%;" />
+        </button>
+
+        <!-- mic Button -->
+        <button id="btn-mic" style="position: absolute; left: 871px; top: 521px; width: 36px; height: 36px; background: none; border: none; opacity: 0.78; cursor: pointer;">
+            <img src="mic.png" alt="mic" style="width: 100%; height: 100%;" />
+        </button>
+        
+    </div>
+<script>
+const placeholderTexts = [
+  "Ask your AI stylist...",
+  "What should I wear today?",
+  "Suggest an outfit for a party",
+  "Style me like a celebrity",
+];
+const input = document.getElementById("chat-input");
+
+let textIndex = 0;
+let charIndex = 0;
+
+function typePlaceholder() {
+  if (charIndex <= placeholderTexts[textIndex].length) {
+    input.placeholder = placeholderTexts[textIndex].substring(0, charIndex) + "|";
+    charIndex++;
+    setTimeout(typePlaceholder, 80);
+  } else {
+    setTimeout(() => {
+      charIndex = 0;
+      textIndex = (textIndex + 1) % placeholderTexts.length;
+      typePlaceholder();
+    }, 1800);
+  }
+}
+typePlaceholder();
+</script>
+<!-- Robot Image placed at root level so it’s not clipped -->
+<img  
+  style="width: 154px; height: 154px; position: absolute; top: 778px; left: 37px; z-index: 5;" 
+  src="robo.png" 
+  alt="AI Robot"
+/>
+</script>
+
+<!-- Place robot image HERE -->
+<img  
+  style="width: 154px; height: 154px; position: absolute; top: 778px; left: 37px; z-index: 5;" 
+  src="robo.png" 
+  alt="AI Robot"
+/>
+
+</div>
+
+
+</div>
+
+
