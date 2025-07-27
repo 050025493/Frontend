@@ -1,0 +1,79 @@
+//  Suggest an Outfit
+color: white;
+ font-size: 52px;
+ font-family: Poppins;
+ font-weight: 700;
+ word-wrap: break-word
+---
+// Casual Wear
+color: black;
+ font-size: 28px;
+ font-family: Poppins;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Party wear
+color: black;
+ font-size: 28px;
+ font-family: Poppins;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Formal wear
+color: black;
+ font-size: 28px;
+ font-family: Poppins;
+ font-weight: 500;
+ word-wrap: break-word
+---
+// Festive Wear
+color: black;
+ font-size: 28px;
+ font-family: Poppins;
+ font-weight: 500;
+ word-wrap: break-word
+.outfit-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.outfit-card {
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.outfit-card img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.outfit-card .label {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  z-index: 2;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8); /* Helps visibility */
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.outfit-card:hover img {
+  transform: scale(1.15);
+  z-index: 3;
+}
+
+.outfit-card:hover .label {
+  z-index: 4;
+}

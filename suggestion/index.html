@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suggest an Outfit</title>
+  <style>
+    .outfit-box {
+      position: absolute;
+      width: 237px;
+      height: 237px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .outfit-box:hover {
+      transform: scale(1.08);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+    .clickable {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 100%; min-height: 130vh; position: relative; background: linear-gradient(138deg, #338A94 0%, #07636E 100%); overflow: hidden">
+    <img style="width: 1468px; height: 1468px; left: -162px; top: 1650px; position: absolute; opacity: 0.84" src="image 34.png" />
+    <img style="width: 61px; height: 67px; left: 114px; top: 107px; position: absolute; transform: rotate(180deg); transform-origin: top left" src="forward.png" />
+    
+    <div style="width: 574px; height: 68px; left: 433px; top: 69px; position: absolute; text-align: center; justify-content: center; display: flex; flex-direction: column; color: white; font-size: 52px; font-family: Poppins; font-weight: 700;">Suggest an Outfit</div>
+    
+    <div style="width: 1024px; height: 663px; left: 208px; top: 224px; position: absolute; background: #EADAB7; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); overflow: hidden; border-radius: 20px">
+      <!-- Casual Wear -->
+      <a class="clickable" href="#" style="left: 131px; top: 53px; position: absolute;">
+        <img class="outfit-box" src="image 34.png" alt="Casual Wear" />
+      </a>
+      <div style="width: 223px; height: 65px; left: 138px; top: 236px; position: absolute; text-align: center; display: flex; justify-content: center; align-items: center; color: black; font-size: 28px; font-family: Poppins; font-weight: 500;">Casual Wear</div>
+
+      <!-- Party Wear -->
+      <a class="clickable" href="#" style="left: 652px; top: 66px; position: absolute;">
+        <img class="outfit-box" src="image 35.png" alt="Party Wear" style="height: 212px;" />
+      </a>
+      <div style="width: 223px; height: 65px; left: 659px; top: 236px; position: absolute; text-align: center; display: flex; justify-content: center; align-items: center; color: black; font-size: 28px; font-family: Poppins; font-weight: 500;">Party wear</div>
+
+      <!-- Festive Wear -->
+      <a class="clickable" href="#" style="left: 124px; top: 393px; position: absolute;">
+        <img class="outfit-box" src="https://placehold.co/237x212" alt="Festive Wear" style="height: 212px;" />
+      </a>
+
+      <!-- Formal Wear -->
+      <a class="clickable" href="#" style="left: 659px; top: 393px; position: absolute;">
+        <img class="outfit-box" src="https://placehold.co/237x212" alt="Formal Wear" style="height: 212px;" />
+      </a>
+      <div style="width: 223px; height: 65px; left: 659px; top: 563px; position: absolute; text-align: center; display: flex; justify-content: center; align-items: center; color: black; font-size: 28px; font-family: Poppins; font-weight: 500;">Formal wear</div>
+    </div>
+
+    <!-- Festive wear label -->
+    <div style="width: 223px; height: 65px; left: 339px; top: 787px; position: absolute; text-align: center; display: flex; justify-content: center; align-items: center; color: black; font-size: 28px; font-family: Poppins; font-weight: 500;">Festive Wear</div>
+  </div>
+</body>
+</html>
